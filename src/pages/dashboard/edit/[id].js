@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import endPoints from '@services/api';
-import Modal from '@common/modal';
+
 const Edit = () => {
   const [product, setProduct] = useState({});
   const router = useRouter();
