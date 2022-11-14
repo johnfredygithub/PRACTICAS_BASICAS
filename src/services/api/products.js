@@ -38,7 +38,7 @@ const deleteProduct = async (id) => {
     const response = await axios.delete(endPoints.products.deleteProducts(id));
     return response.data;
   } catch (err) {
-    return error(err);
+    return console.error(err);
   }
 };
 
