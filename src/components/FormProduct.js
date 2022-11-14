@@ -1,6 +1,6 @@
 import { toast } from 'react-toastify';
 import { addProduct, updateProduct } from '@services/api/products';
-import { useFormik, ErrorMessage } from 'formik';
+import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import React, { useState } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
