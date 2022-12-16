@@ -9,17 +9,17 @@ import {
 import getColorBypokemonType from "../utils/getColorBypokemonType";
 import { capitalize } from "lodash";
 import { useNavigation } from "@react-navigation/native";
-////COMPONENT
+
 const PokemonCard = (props) => {
   const { pokemon } = props;
   const pokemonColor = getColorBypokemonType(pokemon.type);
-  ///console.log(pokemonColor);
-  const bgStyles = { backgroundColor: pokemonColor, ...styles.bgStyles }; ////estilos color
+ 
+  const bgStyles = { backgroundColor: pokemonColor, ...styles.bgStyles }; 
 
-  const navigation = useNavigation(); ///
+  const navigation = useNavigation(); 
 
   const goToPokemon = () => {
-    navigation.navigate("Pokemon", {id:pokemon.id});////screens pokemon 
+    navigation.navigate("Pokemon", {id:pokemon.id});
   };
 
   return (
@@ -39,7 +39,7 @@ const PokemonCard = (props) => {
   );
 };
 
-////stylos
+
 const styles = StyleSheet.create({
   card: {
     flex: 1,

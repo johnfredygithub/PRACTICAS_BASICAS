@@ -13,7 +13,11 @@ const PokedexNavigation = () => {
         component={PokedexScreen}
         options={{ title: "", headerTransparent: true }}
       ></Stack.Screen>
-      <Stack.Screen name="Pokemon" component={PokemonScreen} options={{ title: "", headerTransparent: true }}></Stack.Screen>
+      <Stack.Screen
+        name="Pokemon"
+        component={PokemonScreen}
+        options={{ title: "", headerTransparent: true }}
+      ></Stack.Screen>
     </Stack.Navigator>
   );
 };

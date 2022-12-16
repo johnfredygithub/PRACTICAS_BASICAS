@@ -4,7 +4,7 @@ import { map,capitalize } from "lodash";
 import getColorBypokemonType from "../../utils/getColorBypokemonType";
 const Type = (props) => {
   const { types } = props;
-
+console.log("------------------->",props) 
   return (
     <View style={styles.content}>
       {map(types, (item, index) => (

@@ -17,7 +17,7 @@ const Stats = (props) => {
     <View style={styles.content}>
       <Text style={styles.title}>BASE STATS</Text>
       {map(stats, (item, index) => (
-        <View key={index} style={styles.block}>
+        <View key={index} style={styles.block}> 
           <View style={styles.blockTitle}>
             <Text style={styles.statName}>{capitalize(item.stat.name)}</Text>
           </View>

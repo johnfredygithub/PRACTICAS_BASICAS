@@ -10,7 +10,7 @@ import PokemonCard from "./PokemonCard";
 
 const PokemonList = (props) => {
   const { pokemons, loadPokemon, IsNext } = props;
-  //console.log(props.pokemons)
+  
   const loadMore = () => {
     loadPokemon();
   };
